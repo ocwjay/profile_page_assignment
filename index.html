@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navBar">
         <div class="navWrapper">
-            <a href="#" id="logo">Profile</a>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">My Profile</a>
-                </li>
-                <li>
-                    <a href="#">Find Connections</a>
-                </li>
-            </ul>
+            <div class="logoAndLinks">
+                <a href="#" id="logo">Profile</a>
+                <ul class="navLinks">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">My Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Find Connections</a>
+                    </li>
+                </ul>
+            </div>
+            
             <button class="signOut">Sign Out</button>
         </div>
     </div>
@@ -45,7 +52,7 @@
                 </div>
             </div>
             <div class="educationContainer">
-                <div class="grayTop">
+                <div class="educationGrayTop">
                     <h2>Education</h2>
                 </div>
                 <div class="educationContent">
@@ -62,17 +69,25 @@
                     <h2>Connection Requests</h2>
                 </div>
                 <div class="connectionReqAccts">
-                    <div>
-                        <img src="images/todd-s.jpg" alt="profile image for Todd E" class="connectionReqIcon">
-                        <p>Todd E</p>
-                        <img src="icons/accept-circle.png" alt="accept request icon" class="acceptIcon">
-                        <img src="icons/close-circle.png" alt="decline request icon" class="declineIcon">
+                    <div class="connectionReq">
+                        <div class="reqIconAndName">
+                            <img src="images/todd-s.jpg" alt="profile image for Todd E" class="connectionReqIcon">
+                            <p class="name">Todd E</p>
+                        </div>
+                        <div class="acceptDeclineContainer">
+                            <img src="icons/accept-circle.png" alt="accept request icon" class="acceptIcon">
+                            <img src="icons/close-circle.png" alt="decline request icon" class="declineIcon">
+                        </div>
                     </div>
-                    <div>
-                        <img src="images/phil-s.jpg" alt="profile image for Phil K" class="connectionReqIcon">
-                        <p>Phil K</p>
-                        <img src="icons/accept-circle.png" alt="accept request icon" class="acceptIcon">
-                        <img src="icons/close-circle.png" alt="decling request icon" class="declineIcon">
+                    <div class="connectionReq">
+                        <div class="reqIconAndName">
+                            <img src="images/phil-s.jpg" alt="profile image for Phil K" class="connectionReqIcon">
+                            <p class="name">Phil K</p>
+                        </div>
+                        <div class="acceptDeclineContainer">
+                            <img src="icons/accept-circle.png" alt="accept request icon" class="acceptIcon">
+                            <img src="icons/close-circle.png" alt="decling request icon" class="declineIcon">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,22 +97,25 @@
                     <h2>Your Connections</h2>
                 </div>
                 <div class="yourConnectionsAccts">
-                    <div>
-                        <img src="images/adrien-s.jpg" alt="profile image for Adrien D">
-                        <p>Adrien D</p>
+                    <div class="connection">
+                        <img src="images/adrien-s.jpg" alt="profile image for Adrien D" class="connectionIcon">
+                        <p class="name">Adrien D</p>
                     </div>
-                    <div>
-                        <img src="images/anne-s.jpg" alt="profile image for Anne J">
-                        <p>Anne J</p>
+                    <div class="connection">
+                        <img src="images/anne-s.jpg" alt="profile image for Anne J"  class="connectionIcon">
+                        <p class="name">Anne J</p>
                     </div>
-                    <div>
-                        <img src="images/alayne-s.jpg" alt="profile image for Alayne T">
-                        <p>Alayne T</p>
+                    <div class="connection">
+                        <img src="images/alayne-s.jpg" alt="profile image for Alayne T"  class="connectionIcon">
+                        <p class="name">Alayne T</p>
                     </div>
-                    <div>
-                        <img src="images/arry-s.jpg" alt="profile image for Arry Y">
-                        <p>Arry Y</p>
+                    <div class="connection">
+                        <img src="images/arry-s.jpg" alt="profile image for Arry Y"  class="connectionIcon">
+                        <p class="name">Arry Y</p>
                     </div>
+                </div>
+                <div class="viewMore">
+                    <a href="#">View More</a>
                 </div>
             </div>
         </div>

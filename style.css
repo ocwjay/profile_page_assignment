@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(17, 17, 17);
+}
+
+.navWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1075px;
+}
+
+.logoAndLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    list-style: none;
+}
+
+.navLinks li {
+    margin: 0 10px;
+}
+
+.navLinks li a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.userContainer, .educationContainer, .connectionReqContainer, .yourConnectionsContainer {
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.col-1 {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-2 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blueTop {
+    background-color: cornflowerblue;
+    height: 130px;
+}
+
+.grayTop {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color: white;
+}
+
+.educationGrayTop {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    color: white;
+}
+
+.educationGrayTop h2 {
+    margin-left: 50px;
+}
+
+.userContent {
+    margin: 75px 50px 30px 50px;
+}
+
+.location, .edit {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.connectionReqAccts {
+    display: flex;
+    flex-direction: column;
+}
+
+.connectionReq {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.reqIconAndName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.acceptDeclineContainer {
+    margin: 10px;
+}
+
+.connection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.viewMore {
+    border-top: solid 2px gray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.viewMore a {
+    margin: 20px;
+}
+
+.educationContent {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 50px;
+}
+
+.educationDates {
+    color: rgb(82, 82, 82);
+    margin: 10px 0;
+}
+
+.bubble {
+    border-radius: 50%;
+    background-color: rgb(180, 180, 180);
+    min-width: 20px;
+    text-align: center;
+    padding: 3px;
+    margin: 10px 0;
+    color: black;
+}
+
+.signOut {
+    background-color: cornflowerblue;
+    font-size: 20px;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+/*Icons*/
+
+#avatarIcon {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.connectionReqIcon, .connectionIcon {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.acceptIcon, .declineIcon {
+    width: 30px;
+    height: 30px;
+}
+
+#mapPin {
+    width: 10px;
+    margin-right: 10px;;
+}
+
+#gearIcon {
+    width: 20px;
+    margin-right: 10px;
+}
