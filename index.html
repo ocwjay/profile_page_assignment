@@ -47,7 +47,7 @@
                     <p>Master of shadows and the Internet!</p>
                     <div class="edit">
                         <img src="icons/gear.png" alt="settings gear icon" id="gearIcon">
-                        <a href="#">edit profile</a>
+                        <a href="#" onclick="changeUsername()">edit profile</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
         <div class="col-2">
             <div class="connectionReqContainer">
                 <div class="grayTop">
-                    <p class="bubble">2</p>
+                    <p class="bubble" id="reqBubble">2</p>
                     <h2>Connection Requests</h2>
                 </div>
                 <div class="connectionReqAccts">
@@ -75,8 +75,8 @@
                             <p class="name">Todd E</p>
                         </div>
                         <div class="acceptDeclineContainer">
-                            <img src="icons/accept-circle.png" alt="accept request icon" class="acceptIcon">
-                            <img src="icons/close-circle.png" alt="decline request icon" class="declineIcon">
+                            <a href="#" onclick="acceptRequest(this)"><img src="icons/accept-circle.png" alt="accept request icon" class="acceptIcon"></a>
+                            <a href="#" onclick="declineRequest(this)"><img src="icons/close-circle.png" alt="decline request icon" class="declineIcon"></a>
                         </div>
                     </div>
                     <div class="connectionReq">
@@ -85,15 +85,15 @@
                             <p class="name">Phil K</p>
                         </div>
                         <div class="acceptDeclineContainer">
-                            <img src="icons/accept-circle.png" alt="accept request icon" class="acceptIcon">
-                            <img src="icons/close-circle.png" alt="decling request icon" class="declineIcon">
+                            <a href="#" onclick="acceptRequest(this)"><img src="icons/accept-circle.png" alt="accept request icon" class="acceptIcon"></a>
+                            <a href="#" onclick="declineRequest(this)"><img src="icons/close-circle.png" alt="decline request icon" class="declineIcon"></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="yourConnectionsContainer">
                 <div class="grayTop">
-                    <p class="bubble">500+</p>
+                    <p class="bubble" id="connectionsBubble">500</p>
                     <h2>Your Connections</h2>
                 </div>
                 <div class="yourConnectionsAccts">
@@ -120,5 +120,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
